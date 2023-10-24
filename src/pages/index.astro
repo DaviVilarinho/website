@@ -16,9 +16,12 @@ import Skills from "../components/Skills.astro";
         <main>
             <h1>👋 hello, world! 🚀</h1>
             <p>
-                Sou mais que um desenvolvedor de software: um software engineer!
+                Sou um desenvolvedor, back end por excelência e escolha, mas
+                full stack na medida que o código em produção é responsabilidade
+                da equipe.
             </p>
 
+            <img class="centralized" src="/eu-no-patio.jpg" alt="foto minha me apresentando"/>
             <h2>Stack</h2>
             <p>
                 Particularmente eu programei majoritariamente e
@@ -57,9 +60,8 @@ import Skills from "../components/Skills.astro";
             <p>
                 No entanto, como desenvolvedor, reconheço que o ciclo de
                 desenvolvimento de software exige conhecimento em diversas
-                áreas, tecnologias e linguagens, e estou aberto para novas
-                experiências com ferramentas novas e diferentes, principalmente
-                (do ponto de vista técnico):
+                áreas, tecnologias e linguagens, e <b>estou aberto para novas
+                experiências</b> com ferramentas novas e diferentes, principalmente: 
                 <Skills
                     skills={[
                         "Clojure",
@@ -75,6 +77,8 @@ import Skills from "../components/Skills.astro";
             </p>
 
             <h2>Experiência</h2>
+
+            <p>
             <li>
                 <b>2022-09 - 2022-12 => Eletroapp:</b> desenvolvimento de
                 protótipo e infraestrutura de aplicativo Mobile para ensino de
@@ -104,10 +108,33 @@ import Skills from "../components/Skills.astro";
                         puppeteer
                     </li>
                     <li>
-                        <b>Telas</b>: mudanças no funil de vendas, atribuições
+                        <b>Telas</b>: mudanças e coleta de estatísticas no funil
+                        de vendas, conclusão de features do back end.
+                    </li>
+                    <li>
+                        <b>Automações e Infra</b>: deploy de sistema CI <a
+                            href="https://www.jenkins.io/">Jenkins</a
+                        >, prospecção de deploy de sistema <a
+                            href="https://github.com/sonatype/nexus-oss"
+                            >Nexus</a
+                        >, automação de rotinas de snapshots e transferências
+                        entre contas de DB AWS RDS, geração de relatório de
+                        pagamentos pendentes para cobrança em massa.
+                    </li>
+                    <li>
+                        <b>Estabiliza</b>: desenvolvimento mobile com Flutter de
+                        telas e manejo de usuário e suas informações. Criação de
+                        cloud functions em Typescript.
                     </li>
                 </ul>
             </li>
+            <li>
+                <b>2021-04 - 2021-06 => Luiz Cláudio Theodoro:</b> solução para
+                wiki do professor após identificação e comprovação de uma falha de
+                segurança. Proposta de deploy com containers e correção da infraestrutura.
+                Também criado <a href="https://github.com/DaviVilarinho/mdpdfizer">protótipo de conversão de artigos mediawiki em slides</a> com php.
+            </li>
+            </p>
 
             <h2>Trajetória Acadêmica</h2>
             <p>
@@ -151,9 +178,13 @@ import Skills from "../components/Skills.astro";
                 <li>
                     Sei <b>inglês</b> (Avançado).
                 </li>
+                <li>
+                    Pra mim o <b>date</b> perfeito é iso-8601, outros formatos
+                    me confundem.
+                </li>
                 <li>Adepto de administrar tempo, tarefas e dinheiro.</li>
                 <li>
-                    Eu sou bem aleatório, eu sempre vou me lembrar de um evento
+                    Sou bem aleatório, sempre vou lembrar de um evento
                     que está à grandes saltos do assunto atual.
                 </li>
                 <li>
@@ -174,12 +205,16 @@ import Skills from "../components/Skills.astro";
                         href="https://syncthing.net/">syncthing</a
                     >, <a href="https://keepassxc.org">KeePassXC</a>...)
                 </li>
-                <li>
-                    Pra mim o <b>date</b> perfeito é iso-8601, outros formatos
-                    me confundem.
-                </li>
             </ol>
         </main>
         <Footer />
     </body>
 </html>
+<style>
+ .centralized {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  } 
+</style>
