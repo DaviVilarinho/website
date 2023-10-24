@@ -1,0 +1,23 @@
+---
+const { skills } = Astro.props;
+---
+
+<div class="skills">
+    {
+        skills.map((skill: string) => (
+            <span>
+                <code>{skill}</code>
+            </span>
+        ))
+    }
+</div>
+<style>
+    .skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 100%;
+    }
+</style>

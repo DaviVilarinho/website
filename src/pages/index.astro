@@ -1,50 +1,185 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Skills from "../components/Skills.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to
-				build a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like
-				Tailwind, React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header title={SITE_TITLE} />
+        <main>
+            <h1>👋 hello, world! 🚀</h1>
+            <p>
+                Sou mais que um desenvolvedor de software: um software engineer!
+            </p>
+
+            <h2>Stack</h2>
+            <p>
+                Particularmente eu programei majoritariamente e
+                profissionalmente:
+                <Skills
+                    skills={[
+                        "Java",
+                        "Typescript",
+                        "Javascript",
+                        "Dart",
+                        "Python",
+                        "Sh/Bash/Zsh",
+                    ]}
+                />
+            </p>
+            <p>
+                Juntamente com ferramentas como:
+                <Skills
+                    skills={[
+                        "Terraform",
+                        "Linux",
+                        "Containers",
+                        "Docker",
+                        "Jenkins",
+                        "React",
+                        "Flutter",
+                        "Micronaut",
+                        "Git",
+                    ]}
+                />
+            </p>
+            <p>
+                Em plataformas e infraestrutura:
+                <Skills skills={["AWS", "Google Firebase", "PostgreSQL"]} />
+            </p>
+            <p>
+                No entanto, como desenvolvedor, reconheço que o ciclo de
+                desenvolvimento de software exige conhecimento em diversas
+                áreas, tecnologias e linguagens, e estou aberto para novas
+                experiências com ferramentas novas e diferentes, principalmente
+                (do ponto de vista técnico):
+                <Skills
+                    skills={[
+                        "Clojure",
+                        "C++",
+                        "php",
+                        "Golang",
+                        "Rust",
+                        "Azure",
+                        "Google Cloud",
+                        "Svelte",
+                    ]}
+                />
+            </p>
+
+            <h2>Experiência</h2>
+            <li>
+                <b>2022-09 - 2022-12 => Eletroapp:</b> desenvolvimento de
+                protótipo e infraestrutura de aplicativo Mobile para ensino de
+                Eletroquímica para alunos em áreas rurais.
+            </li>
+            <li>
+                <b>2021-11 - 2021-07 => Exacode:</b> desenvolvimento back end
+                (Java e Micronaut, Node.JS), front end (React, Flutter),
+                infraestrutura e automação.
+                <ul>
+                    <li>
+                        <b>CNH-API</b>: desenvolvi features para a api principal
+                        relacionadas à automação da gestão do banco de dados <a
+                            href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+                            >RDS</a
+                        >
+                         autoescalável da <a href="https://aws.amazon.com"
+                            >AWS</a
+                        >, alterações no checkout, externalização de requisições
+                        longas (maiores que as lambda's), mensageria com <a
+                            href="https://www.twilio.com">Twilio</a
+                        >
+                    </li>
+                    <li>
+                        <b>api's auxiliares</b>: correção na geração de boletos
+                        e imagens em api's Node.JS, redução do consumo de
+                        puppeteer
+                    </li>
+                    <li>
+                        <b>Telas</b>: mudanças no funil de vendas, atribuições
+                    </li>
+                </ul>
+            </li>
+
+            <h2>Trajetória Acadêmica</h2>
+            <p>
+                Curso desde 2020 Ciência da Computação na Universidade Federal
+                de Uberlândia (<a href="https://ufu.br/">UFU</a>), com previsão
+                de conclusão ao final de 2024.
+            </p>
+            <ul>
+                <li>Sou integrante do PET Computação</li>
+                <li>
+                    Tenho <a
+                        href="https://github.com/DaviVilarinho/ic-intervalo-qos"
+                        >uma iniciação científica</a
+                    > em andamento que será detalhada aqui em breve! Baseia-se
+                    na análise da deterioração da previsão quando utilizadas
+                    técnicas de <b>Machine Learning</b> para previsão de QoS em
+                    aplicações de Streaming e Banco de Dados. Dando continuidade
+                    à pesquisa de meu orientador pós-doutor <a
+                        href="https://facom.ufu.br/pessoas/docentes/rafael-pasquini"
+                        >Rafael Pasquini</a
+                    >.
+                </li>
+                <li>
+                    Já ministrei minicursos <b>Python</b> e fui monitor <b
+                        >C++</b
+                    > na iniciativa Uberhub.
+                </li>
+                <li>
+                    Desenvolvi um protótipo de aplicativo mobile com <b
+                        >Flutter</b
+                    > e <b>Firebase</b> para a Engenharia Química em um projeto
+                    da professora pós-doutora <a
+                        href="http://www.ppgqui.iq.ufu.br/pessoas/sheila-cristina-canobre"
+                        >Sheila Canobre</a
+                    >
+                </li>
+            </ul>
+
+            <h2>Fatos Aleatórios</h2>
+            <ol>
+                <li>
+                    Sei <b>inglês</b> (Avançado).
+                </li>
+                <li>Adepto de administrar tempo, tarefas e dinheiro.</li>
+                <li>
+                    Eu sou bem aleatório, eu sempre vou me lembrar de um evento
+                    que está à grandes saltos do assunto atual.
+                </li>
+                <li>
+                    I Use <a href="https://archlinux.org/">Arch</a> BTW (mas já
+                    usei <a href="https://www.debian.org/">Debian</a>, <a
+                        href="https://ubuntu.com/">Ubuntu</a
+                    >, <a href="https://www.fedoraproject.org/">Fedora</a>, <a
+                        href="https://www.suse.com/">OpenSUSE</a
+                    >...)
+                </li>
+                <li>
+                    Gosto de Software Livre e sempre que possível e conveniente
+                    dou preferência (<a href="https://www.gnucash.org/"
+                        >GnuCash</a
+                    >, <a href="https://neovim.io/">neovim</a>, <a
+                        href="https://www.gnu.org/software/emacs/">emacs</a
+                    >, <a href="https://mpv.io/">mpv</a>, <a
+                        href="https://syncthing.net/">syncthing</a
+                    >, <a href="https://keepassxc.org">KeePassXC</a>...)
+                </li>
+                <li>
+                    Pra mim o <b>date</b> perfeito é iso-8601, outros formatos
+                    me confundem.
+                </li>
+            </ol>
+        </main>
+        <Footer />
+    </body>
 </html>
