@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
 	site: 'https://davivilarinho.github.io',
-  base: '/website',
+//  base: '/',
 	integrations: [mdx(), sitemap()],
 });
