@@ -4,7 +4,6 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-	site: 'https://davivilarinho.github.io',
-  base: '/',
+	site: 'https://vilarinho.pages.dev',
 	integrations: [mdx(), sitemap()],
 });
