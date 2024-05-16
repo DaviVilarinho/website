@@ -60,8 +60,11 @@ import { SITE_TITLE } from "../consts";
 </header>
 <style>
     header {
+        position: fixed;
+        width: 100%;
         margin: 0;
         padding: 0 1em;
+        padding-right: 1em;
         background: white;
         box-shadow: 0 2px 8px rgba(var(--black), 5%);
     }
@@ -94,6 +97,7 @@ import { SITE_TITLE } from "../consts";
         display: flex;
         margin-top: auto;
         margin-bottom: auto;
+        padding-right: 1.5em;
     }
     @media (max-width: 720px) {
         .social-links {
