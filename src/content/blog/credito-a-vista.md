@@ -1,8 +1,8 @@
-
 ---
 title: 'Passa no crédito à vista'
 description: 'Como o Nubank oferece um ótimo jeito de se organizar'
-pubDate: '2024-05-15'
+pubDate: '2024-05-16'
+heroImage: '/cartoes.jpg'
 ---
 
 ~disclaimer de que não sou financial advisor~
